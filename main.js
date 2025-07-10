@@ -40,10 +40,15 @@ const iconOptions = [
   { name: "Supabase", src: "/assets/supabase.png" },
   { name: "Postman", src: "/assets/postman.png" },
   { name: "Git", src: "/assets/git.png" },
+  { name: "Github", src: "/assets/github.png" },
   { name: "Vercel", src: "/assets/vercel.png" },
   { name: "Nextjs", src: "/assets/nextjs.png" },
   { name: "Reactjs", src: "/assets/reactjs.png" },
   { name: "Redis", src: "/assets/redis.png" },
+  { name: "Airtable", src: "/assets/airtable.png" },
+  { name: "AWS", src: "/assets/aws.png" },
+  { name: "Framer", src: "/assets/framer.png" },
+  { name: "Cactro", src: "/assets/cactro.png" },
 ];
 
 const iconSelector = document.getElementById("icon-selector");
