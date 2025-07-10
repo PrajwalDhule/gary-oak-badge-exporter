@@ -22,6 +22,7 @@ const iconOptions = [
   { name: "Claude", src: "/assets/claude.png" },
   { name: "Gemini", src: "/assets/gemini.png" },
   { name: "Cursor", src: "/assets/cursor.png" },
+  { name: "VS Code", src: "/assets/vscode.png" },
   { name: "Neovim", src: "/assets/neovim.png" },
   { name: "TypeScript", src: "/assets/typescript.png" },
   { name: "Javascript", src: "/assets/javascript.png" },
@@ -29,6 +30,10 @@ const iconOptions = [
   { name: "Rust", src: "/assets/rust.png" },
   { name: "Go", src: "/assets/golang.png" },
   { name: "C++", src: "/assets/C++.png" },
+  { name: "CSS", src: "/assets/css.png" },
+  { name: "Aceternity UI", src: "/assets/aceternity-ui.png" },
+  { name: "Tailwind", src: "/assets/tailwind.png" },
+  { name: "Shadcn", src: "/assets/shadcn.png" },
   { name: "FFmpeg", src: "/assets/ffmpeg.png" },
   { name: "Docker", src: "/assets/docker.png" },
   { name: "Postgres", src: "/assets/postgres.png" },
@@ -39,8 +44,6 @@ const iconOptions = [
   { name: "Nextjs", src: "/assets/nextjs.png" },
   { name: "Reactjs", src: "/assets/reactjs.png" },
   { name: "Redis", src: "/assets/redis.png" },
-  { name: "Tailwind", src: "/assets/tailwind.png" },
-  { name: "Shadcn", src: "/assets/shadcn.png" },
 ];
 
 const iconSelector = document.getElementById("icon-selector");
