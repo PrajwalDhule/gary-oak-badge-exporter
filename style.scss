@@ -1,0 +1,167 @@
+/**
+ * Gary Oak Badge Exporter
+ * Copyright (C) 2025 Prajwal Dhule
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+:root {
+  --parent-image-width: 90vh;
+  --badge-divider: 18;
+  --translate-z: 30px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  .img-container {
+    position: relative;
+    height: var(--parent-image-width);
+    width: var(--parent-image-width);
+    margin-top: 8px;
+    img.Gary-Oak {
+      height: 100%;
+      width: 100%;
+    }
+    .badge-container {
+      position: absolute;
+      transform: translate(-50%, -50%) translateZ(var(--translate-z)) scale(1)
+        rotateX(10deg) rotateY(-15deg) rotateZ(5deg);
+      width: calc(var(--parent-image-width) / var(--badge-divider));
+      height: calc(var(--parent-image-width) / var(--badge-divider));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      backface-visibility: hidden;
+      // border: 2px solid black;
+      &:has(#badge-1) {
+        top: 63%;
+        left: 33.75%;
+      }
+      &:has(#badge-2) {
+        top: 64%;
+        left: 41%;
+      }
+      &:has(#badge-3) {
+        top: 65%;
+        left: 48.25%;
+      }
+      &:has(#badge-4) {
+        top: 66%;
+        left: 55.5%;
+        --badge-divider: 19;
+      }
+      &:has(#badge-5) {
+        top: 67%;
+        left: 62.75%;
+        --badge-divider: 20;
+      }
+      &:has(#badge-6) {
+        top: 70%;
+        left: 33.75%;
+      }
+      &:has(#badge-7) {
+        top: 71%;
+        left: 41%;
+      }
+      &:has(#badge-8) {
+        top: 72%;
+        left: 48.25%;
+      }
+      &:has(#badge-9) {
+        top: 73%;
+        left: 55.5%;
+        --badge-divider: 20;
+      }
+      &:has(#badge-10) {
+        top: 74%;
+        left: 62.75%;
+        --badge-divider: 20;
+      }
+      .badge {
+        filter: drop-shadow(-4px 5px 10px rgba(0, 0, 0, 0.75));
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        display: block;
+      }
+    }
+  }
+  .controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-inline: auto;
+  }
+
+  .control-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  label,
+  button,
+  input {
+    text-wrap: nowrap;
+  }
+
+  button {
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  select,
+  input[type="file"] {
+    padding: 6px;
+    cursor: pointer;
+    background-color: #4a90da;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --parent-image-width: 90vw;
+  }
+  body {
+    .controls {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

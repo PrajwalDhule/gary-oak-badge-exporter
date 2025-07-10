@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pokemon Badges</title>
+</head>
+<body>
+  <div class="img-container">
+    <img class="Gary-Oak" src="/assets/Gary_Oak_Empty.png" alt="Gary Oak">
+    <div class="badge-container">
+      <img src="/assets/chatgpt.png" alt="chatgpt icon" id="badge-1" class="badge">
+    </div>
+    <div class="badge-container">
+      <img src="/assets/claude.png" alt="claude icon" id="badge-2" class="badge">
+    </div>
+    <div class="badge-container">
+      <img src="/assets/gemini.png" alt="gemini icon" id="badge-3" class="badge">
+    </div>
+    <div class="badge-container">
+      <img src="/assets/cursor.png" alt="cursor icon" id="badge-4" class="badge">
+    </div>
+    <div class="badge-container">
+      <img src="/assets/neovim.png" alt="neovim icon" id="badge-5" class="badge">
+    </div>
+    <div class="badge-container">
+      <img src="/assets/postgres.png" alt="postgres icon" id="badge-6" class="badge">
+    </div>
+    <div class="badge-container">
+      <img src="/assets/git.png" alt="git icon" id="badge-7" class="badge">
+    </div>
+    <div class="badge-container">
+      <img src="/assets/javascript.png" alt="javascript icon" id="badge-8" class="badge">
+    </div>
+    <div class="badge-container">
+      <img src="/assets/nextjs.png" alt="nextjs icon" id="badge-9" class="badge">
+    </div>
+    <div class="badge-container">
+      <img src="/assets/tailwind.png" alt="tailwind icon" id="badge-10" class="badge">
+    </div>
+      
+  <!-- Controls -->
+  <div class="controls">
+    <div class="control-row">
+      <label for="badge-selector">Select Badge:</label>
+      <select id="badge-selector">
+        <option value="1">Badge 1</option>
+        <option value="2">Badge 2</option>
+        <option value="3">Badge 3</option>
+        <option value="4">Badge 4</option>
+        <option value="5">Badge 5</option>
+        <option value="6">Badge 6</option>
+        <option value="7">Badge 7</option>
+        <option value="8">Badge 8</option>
+        <option value="9">Badge 9</option>
+        <option value="10">Badge 10</option>
+      </select>
+    </div>
+
+    <div class="control-row">
+      <label for="icon-selector">Choose Icon:</label>
+      <select id="icon-selector">
+        <!-- Options populated by JS -->
+      </select>
+    </div>
+
+    <div class="control-row">
+      <label for="image-upload">Or Upload Custom:</label>
+      <input type="file" id="image-upload" accept="image/*" />
+    </div>
+
+    <button id="download-btn">Download Image</button>
+  </div>
+</body>
+
+<script type="module" src="/main.js"></script>
+</html>

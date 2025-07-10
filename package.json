@@ -1,0 +1,11 @@
+{
+  "name": "gary-oak-badge-exporter",
+  "version": "1.0.0",
+  "description": "A web-based tool to customize Gary Oak's badge showcase using tech logos or custom images, with export functionality.",
+  "author": "Prajwal Dhule",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "dom-to-image-more": "^3.6.0",
+    "vite": "^7.0.4"
+  }
+}
