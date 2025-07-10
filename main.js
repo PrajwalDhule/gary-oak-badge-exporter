@@ -98,9 +98,19 @@ imageUpload.addEventListener("change", (e) => {
 
 document.getElementById("download-btn").addEventListener("click", () => {
   const node = document.querySelector(".img-container");
+  const scale = window.devicePixelRatio || 2; // For mobile, use 2x or 3x
 
   domtoimage
-    .toPng(node)
+    .toPng(node, {
+      width: node.offsetWidth * scale,
+      height: node.offsetHeight * scale,
+      style: {
+        transform: `scale(${scale})`,
+        transformOrigin: "top left",
+        width: `${node.offsetWidth}px`,
+        height: `${node.offsetHeight}px`,
+      }
+    })
     .then(function (dataUrl) {
       const link = document.createElement("a");
       link.download = "gary-badges.png";

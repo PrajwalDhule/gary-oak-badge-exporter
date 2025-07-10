@@ -26,6 +26,7 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  padding-top: 8px;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -38,7 +39,6 @@ body .img-container {
   position: relative;
   height: var(--parent-image-width);
   width: var(--parent-image-width);
-  margin-top: 8px;
 }
 body .img-container img.Gary-Oak {
   height: 100%;
