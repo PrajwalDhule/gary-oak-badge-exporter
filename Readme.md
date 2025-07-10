@@ -14,7 +14,7 @@ This is a fun web-based tool that lets you recreate Gary Oak’s iconic badge sh
 
 ## 🚀 How to Use
 
-1. Open the website in your browser
+1. Open the [Website](https://gary-oak-badges.vercel.app/) in your browser
 2. Choose which badge to edit (1–10)
 3. Pick a preset icon from the dropdown OR upload your own transparent image
 4. Repeat for all desired badge slots
@@ -45,3 +45,15 @@ npx vite
 http://localhost:5173
 ```
 
+---
+
+## Connect with me on
+
+- <a href="https://twitter.com/prajwaldhule36" target="_blank" rel="noopener noreferrer">**Twitter**</a>
+- <a href="https://www.linkedin.com/in/prajwal-dhule" target="_blank" rel="noopener noreferrer">**Linkedin**</a>
+
+--- 
+
+## 📝 License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
